@@ -16,6 +16,8 @@ namespace ShootnEvade.Droid
 
 		protected override void OnCreate (Bundle bundle)
 		{
+
+            Clock newClock = new Clock();
 			base.OnCreate (bundle);
 
 			// Set our view from the "main" layout resource

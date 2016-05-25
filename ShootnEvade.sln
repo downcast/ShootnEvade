@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShootnEvade.Droid", "ShootnEvade\ShootnEvade.Droid\ShootnEvade.Droid.csproj", "{509EBAEB-F1C9-43A7-8736-FB2BC5C748BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShootnEvade", "ShootnEvade\ShootnEvade\ShootnEvade.csproj", "{33E616EB-1C1F-4F02-828B-8C5E99F1DCBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{428143B1-1857-428C-8515-3967893EAA19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

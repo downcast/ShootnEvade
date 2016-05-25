@@ -12,8 +12,9 @@ using Android.Widget;
 
 namespace ShootnEvade.Droid
 {
-    class Clock
+    class Objects
     {
+        private int movementSpeed = 33; 
 
     }
 }

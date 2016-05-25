@@ -49,6 +49,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clock.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Object.cs" />

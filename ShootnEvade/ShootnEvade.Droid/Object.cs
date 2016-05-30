@@ -14,15 +14,34 @@ namespace ShootnEvade.Droid
 {
     public class Object : Android.Widget.ImageView
     {
+        private int movementSpeed = 33;
+        private int posX = 0;
+        private int posY = 0;
+        private int resX = 0;
+        private int resY = 0;
+
         private int lives { get; set; }
 
         public Object(Context context) : base(context)
         { }
+        //this would inherit from the AI system in determining the speed of the object or characters.
+        public virtual void speed(int speeds)
+        {
+            movementSpeed = speeds;
+        }
 
-        public virtual void move()
-        { }
+        //move and response would inherite from the main function since its everything and tell
+        //the function the movement and responce time.
+        public virtual void move(int positionX, int positionY)
+        {
+            posX = positionX;
+            posY = positionY;
+        }
 
-        public virtual void response()
-        { }
+        public virtual void response(int respondX, int respondY)
+        { resX = respondX;
+          resY = respondY;
+            
+        }
     }
 }

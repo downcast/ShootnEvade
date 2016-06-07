@@ -12,18 +12,21 @@ using Android.Widget;
 
 namespace ShootnEvade.Droid
 {
-    public class Object : Android.Widget.ImageView
-    {
+	/// <summary>
+	/// Base object for the application. Every object visble to the user has three properties: Lives (how many hits an object takes before destruction), 
+	/// Move (how and where to move on the screen) and Response (how to respond in event of collision)
+	/// </summary>
+    public class Object : Android.Widget.ImageView, ICollisionResponse
+	{
         private int movementSpeed = 33;
         private int posX = 0;
         private int posY = 0;
-        private int resX = 0;
-        private int resY = 0;
 
         private int lives { get; set; }
 
         public Object(Context context) : base(context)
         { }
+
         //this would inherit from the AI system in determining the speed of the object or characters.
         public virtual void speed(int speeds)
         {
@@ -38,10 +41,9 @@ namespace ShootnEvade.Droid
             posY = positionY;
         }
 
-        public virtual void response(int respondX, int respondY)
-        { resX = respondX;
-          resY = respondY;
-            
-        }
-    }
+		public void CollisionResponse(Object o)
+		{
+			// Repond to object collision
+		}
+	}
 }

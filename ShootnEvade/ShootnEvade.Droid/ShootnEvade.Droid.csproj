@@ -52,11 +52,12 @@
     <Compile Include="Clock.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="CollisionDetection.cs" />
+    <Compile Include="IClockTick25.cs" />
+    <Compile Include="ICollisionResponse.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Object.cs" />
     <Compile Include="Obstacle.cs" />
     <Compile Include="Player.cs" />
-    <Compile Include="Objects.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -12,9 +12,11 @@ using Android.Widget;
 
 namespace ShootnEvade.Droid
 {
-    class Objects
-    {
-        private int movementSpeed = 33; 
-
-    }
+	/// <summary>
+	/// Classes that wish to be notified every 25 millisecond will implement callback
+	/// </summary>
+	interface IClockTick
+	{
+		void ClockTick25();
+	}
 }

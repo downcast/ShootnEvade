@@ -16,7 +16,7 @@ namespace ShootnEvade.Droid
 	/// Base object for the application. Every object visble to the user has three properties: Lives (how many hits an object takes before destruction), 
 	/// Move (how and where to move on the screen) and Response (how to respond in event of collision)
 	/// </summary>
-    public class Object : Android.Widget.ImageView, ICollisionResponse
+    public class Object : Android.Widget.ImageView
 	{
         private int movementSpeed = 33;
         private int posX = 0;
@@ -41,9 +41,10 @@ namespace ShootnEvade.Droid
             posY = positionY;
         }
 
-		public void CollisionResponse(Object o)
+		public virtual void CollisionResponse(Object collider)
 		{
 			// Repond to object collision
+			
 		}
 	}
 }
